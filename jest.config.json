@@ -1,0 +1,16 @@
+{
+  "setupFiles": [
+    "raf/polyfill",
+    "<rootDir>/src/setupTests.js"
+  ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "moduleNameMapper": {  
+    "\\.(css|less|scss)$": "<rootDir>/src/assetTransformer.js" 
+  },
+  "transform": {
+    "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+  },
+  "coveragePathIgnorePatterns": ["<rootDir>/src/assetTransformer.js"]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "easy-time-picker",
+  "version": "1.0.0",
+  "description": "React time picker with input which is very simple and light weight and zero dependencies.",
+  "main": "public/index.js",
+  "style": "public/styles.css",
+  "scripts": {
+    "test": "jest --config=jest.config.json --watchAll --coverage",
+    "build:prod": "rm -rf ./public && webpack --env production",
+    "build:dev": "webpack"
+  },
+  "prepublish": "rm -rf ./public && npm run build",
+  "keywords": [
+    "react",
+    "time",
+    "time-picker",
+    "react-time-picker",
+    "react-time-picker-input",
+    "simple-time-picker",
+    "easy-time-picker"
+  ],
+  "author": "Sufiyaan Rajput",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.3",
+    "jest": "^24.9.0",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "react": ">=16.4.0",
+    "react-dom": ">=16.4.0"
+  }
+}

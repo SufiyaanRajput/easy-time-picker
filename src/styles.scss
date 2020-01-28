@@ -1,0 +1,84 @@
+.time-picker-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid rgba(153, 153, 153, 0.418);
+  height: 34px;
+  width: 230px;
+  border-radius: 5px;
+}
+
+.time-picker-input__input{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  border-radius: 5px;
+  input {
+    border: none;
+    width: 50px;
+    text-align: center;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  input:focus{
+    outline: none;
+  }
+}
+
+.time-picker-input__input.period{
+  background-color: #4365af10;
+  border-radius: 0;
+  cursor: pointer;
+  .time-picker-input__input--value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.time-picker-input__input--value{
+  line-height: 32px;
+  margin: 0 !important;
+  height: 100%;
+  &:focus{
+    outline: none;
+  }
+}
+
+.show-time-options{
+  max-height: 100px;
+  opacity: 1;
+}
+
+.hide-time-options{
+  max-height: 0px;
+  opacity: 0;
+}
+
+.time-picker-input--time-options{
+  position: absolute;
+  padding: 0;
+  font-size: 13px;
+  border: 1px solid rgba(153, 153, 153, 0.418);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 0 0 5px 5px;
+  z-index: 999;
+  background-color: #ffffff;
+  list-style: none;
+  li{
+    margin: 0;
+    padding: 3px 9px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: left;
+    &:hover{
+      background-color: #4365af10;
+    }
+  }
+}

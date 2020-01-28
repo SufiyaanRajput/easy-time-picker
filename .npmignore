@@ -1,0 +1,8 @@
+#ignore test folder
+tests
+
+#ignore webpack and other configuration files
+coverage
+.babelrc
+jest.config.json
+webpack.config.json
