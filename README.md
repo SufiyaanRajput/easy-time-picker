@@ -1,5 +1,7 @@
 ## Easy time picker for your react projects.
 
+Source code: https://github.com/SufiyaanRajput/easy-time-picker
+
 BASIC USAGE:
 
 ``` <EasyTimePicker onChange={changeHandler} value="03:00 PM"/> ```
