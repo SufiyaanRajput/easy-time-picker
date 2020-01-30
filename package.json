@@ -1,6 +1,6 @@
 {
   "name": "easy-time-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React time picker with input which is very simple and light weight and zero dependencies.",
   "main": "public/index.js",
   "style": "public/styles.css",
